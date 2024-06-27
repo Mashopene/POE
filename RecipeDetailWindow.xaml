@@ -1,0 +1,16 @@
+﻿<Window x:Class="RecipeManagementApp.RecipeDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe Details" Height="450" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="RecipeNameTextBlock" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+        <TextBox x:Name="RecipeDetailsTextBox" Grid.Row="1" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        <TextBlock x:Name="TotalCaloriesTextBlock" Grid.Row="2" FontWeight="Bold" Margin="0,10,0,0"/>
+    </Grid>
+</Window>
